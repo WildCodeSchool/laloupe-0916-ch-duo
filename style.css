@@ -38,3 +38,11 @@ transform: translate(-50%, -50%);
 .footerp {
   font-size: 1em;
 }
+
+#navbardeux {
+  background-color: white;
+}
+
+.darklink {
+  color: black;
+}
