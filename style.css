@@ -39,10 +39,31 @@ transform: translate(-50%, -50%);
   font-size: 1em;
 }
 
+#push {
+  height: 100px;
+}
+
+#push nav {
+  height: 7em;
+  line-height: 7em;
+}
+
+#push nav li a {
+  font-size: 1.6em;
+}
+
+.phone a {
+  font-size: 1.7em;
+}
+
 #navbardeux {
   background-color: white;
 }
 
 .darklink {
   color: black;
+}
+
+#scrollspy {
+  background-color: grey;
 }
