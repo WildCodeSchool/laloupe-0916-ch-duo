@@ -1,27 +1,10 @@
-#stats {
-    background-image: url(img/slider.jpg);
-    background-size: 100em;
-    background-repeat: no-repeat;
+/* First navbar */
+.phone a {
+  font-size: 1.7em;
 }
 
-h1 {
-    font-size: 2.5em;
-    font-weight: 300;
-}
-
-p {
-    font-size: 1.5em;
-}
-
-.carousel .carousel-item {
-    width: 300px;
-    height: 300px;
-    top: 60px;
-}
-
-.navbar-fixed {
-    top: 0;
-    position: fixed;
+#scrollspy {
+  background-color: grey;
 }
 
 #btnurgent {
@@ -31,12 +14,10 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
-.btn-large {
-  color: black;
-}
-
-.footerp {
-  font-size: 1em;
+/* second navbar */
+.navbar-fixed {
+    top: 0;
+    position: fixed;
 }
 
 #push {
@@ -52,10 +33,6 @@ transform: translate(-50%, -50%);
   font-size: 1.6em;
 }
 
-.phone a {
-  font-size: 1.7em;
-}
-
 #navbardeux {
   background-color: white;
 }
@@ -64,6 +41,117 @@ transform: translate(-50%, -50%);
   color: black;
 }
 
-#scrollspy {
-  background-color: grey;
+.nav-wrapper span {
+  position: absolute;
+  font-size: 0.8em;
+  padding-left: 10px;
+}
+
+#logo {
+  padding-left: 50px;
+  height: 100px;
+}
+
+#logo img {
+  padding-top: 5px;
+  width: 90px;
+  height: 90px;
+}
+
+/* title and paragraph */
+h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* Slider */
+.carousel .carousel-item {
+    width: 300px;
+    height: 300px;
+    top: 60px;
+}
+
+.btn-large {
+  color: black;
+}
+
+/* carousel stats */
+#stats {
+    background-image: url(img/slider.jpg);
+    background-size: 100em;
+    background-repeat: no-repeat;
+}
+
+/* footer */
+.footerp {
+  font-size: 1em;
+}
+
+/* Global view */
+.description img {
+  margin: 0 10px 0 10px;
+}
+
+.description {
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+
+    nav {
+      height: 80px;
+      line-height: 40px;
+    }
+
+    #logo img {
+      width: 65%;
+      height: 90%;
+    }
+
+    .phone a #logo span {
+      font-size: 0.8em;
+    }
+
+    .nav-wrapper span {
+      position: absolute;
+      font-size: 0.7em;
+      width: 250px;
+      padding: 30px 0 0 10px;
+      line-height: normal;
+      white-space: normal;
+    }
+
+    #scrollspy {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+    }
+
+    #scrollspy .right {
+      width: 100%;
+    }
+  }
+
+
+@media screen and (max-width: 560px) {
+
+    #bottomNavbar {
+      height: 80px;
+      line-height: 40px;
+    }
+
+    #bottomBar {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+    }
+
+    #bottomBar .right {
+      width: 100%;
+    }
 }

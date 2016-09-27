@@ -1,11 +1,15 @@
 $(document).ready(function() {
 
+    $(".button-collapse").sideNav();
+
     $(window).scroll(function() {
         if ($(window).scrollTop() > $('#scrollspy').height()) {
             $('#push').addClass('navbar-fixed');
+            $('#topFixed').css({'margin-top': '100px'});
         }
         if ($(window).scrollTop() < $('#scrollspy').height()) {
             $('#push').removeClass('navbar-fixed');
+            $('#topFixed').css({'margin-top': '0'});
         }
     });
 
@@ -16,7 +20,7 @@ $(document).ready(function() {
     autoplay1();
 
     function autoplay1() {
-        if (first == true) {
+        if (first === true) {
             first = false;
         } else {
             $('.carousel').carousel('next');
@@ -29,7 +33,7 @@ $(document).ready(function() {
     autoplay2();
 
     function autoplay2() {
-        if (second == true) {
+        if (second === true) {
             second = false;
         } else {
             $('#slider2').carousel('next');
