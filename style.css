@@ -1,3 +1,11 @@
+.zoom {
+  font-size: 2em;
+}
+
+.normal {
+  font-size: 1.3em;
+}
+
 /* First navbar */
 .phone a {
   font-size: 1.7em;
