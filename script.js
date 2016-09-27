@@ -37,3 +37,11 @@ $(document).ready(function() {
         setTimeout(autoplay2, 3000);
     }
 });
+$("a.zoom").click(function()
+{
+  $(".textevue").css("font-size","130%")
+});
+$("a.normal").click(function()
+{
+  $(".textevue").css("font-size","")
+});
