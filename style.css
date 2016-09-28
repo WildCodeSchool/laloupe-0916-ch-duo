@@ -1,75 +1,84 @@
 /*#0e4d37 vert */
+
+
 /* #ff7400 orange */
 
 .zoom {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 .normal {
-  font-size: 1.3em;
+    font-size: 1.3em;
 }
 
+
 /* First navbar */
+
 .phone a {
-  font-size: 1.7em;
+    font-size: 1.7em;
 }
 
 #scrollspy {
-  background: #d66829; /* Old browsers */
+    background: #d66829;
+    /* Old browsers */
 }
 
 #btnurgent {
-position: absolute;
-top: 70%;
-left: 50%;
-transform: translate(-50%, -50%);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+
 /* second navbar */
+
 .navbar-fixed {
     top: 0;
     position: fixed;
 }
 
 #push {
-  height: 100px;
+    height: 100px;
 }
 
 #push nav {
-  height: 7em;
-  line-height: 7em;
+    height: 7em;
+    line-height: 7em;
 }
 
 #push nav li a {
-  font-size: 1.6em;
+    font-size: 1.6em;
 }
 
 #navbardeux {
-  background-color: white;
+    background-color: white;
 }
 
 .darklink {
-  color: black;
+    color: black;
 }
 
 .nav-wrapper span {
-  position: absolute;
-  font-size: 0.8em;
-  padding-left: 10px;
+    position: absolute;
+    font-size: 0.8em;
+    padding-left: 10px;
 }
 
 #logo {
-  padding-left: 50px;
-  height: 100px;
+    padding-left: 50px;
+    height: 100px;
 }
 
 #logo img {
-  padding-top: 5px;
-  width: 90px;
-  height: 90px;
+    padding-top: 5px;
+    width: 90px;
+    height: 90px;
 }
 
+
 /* title and paragraph */
+
 h1 {
     font-size: 2.5em;
     font-weight: 300;
@@ -79,7 +88,9 @@ p {
     font-size: 1.5em;
 }
 
+
 /* Slider */
+
 .carousel .carousel-item {
     width: 300px;
     height: 300px;
@@ -87,126 +98,147 @@ p {
 }
 
 .btn-large {
-  width: 200px;
-  height: 100px;
-  color: black;
+    width: 200px;
+    height: 100px;
+    color: black;
 }
+
 
 /* carousel stats */
+
 #stats {
     background-image: url(img/slider.jpg);
-    background-size: 100em;
+    background-size: cover;
     background-repeat: no-repeat;
+    width: 70vw;
+    height: 40vh;
 }
 
+#slider2 {
+    height: 100%;
+}
+
+#stats a {
+    top: 80px;
+}
+
+@media screen and (max-width: 500px) {
+    #stats {
+        width: 90vw;
+        height: 45vh;
+    }
+    #stats h1 {
+        font-size: 1.7em;
+    }
+    #stats p {
+        font-size: 1.0em;
+    }
+    #stats i {
+        font-size: 4rem;
+    }
+    #stats a {
+        top: 130px;
+    }
+}
+
+
 /* footer */
+
 .footerp {
-  font-size: 0.8em;
+    font-size: 0.8em;
 }
 
 #bottomNavbar {
-  background: #d66829; /* Old browsers */
+    background: #d66829;
+    /* Old browsers */
 }
 
+
 /* Global view */
+
 .description img {
-  margin: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
 }
 
 .description {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .section {
-  min-height: 80vh;
+    min-height: 80vh;
 }
 
-.circle.responsive-img
-{
-  width: 85%;
+.circle.responsive-img {
+    width: 85%;
 }
+
 
 /* Responsive */
 
 @media screen and (max-width: 560px) {
-
     #bottomNavbar {
-      height: 80px;
-      line-height: 40px;
+        height: 80px;
+        line-height: 40px;
     }
-
     #bottomBar {
-      display: flex;
-      flex-direction: column;
-      height: 100px;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
     }
-
     #bottomBar .right {
-      width: 100%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 500px) {
-
     nav {
-      height: 80px;
-      line-height: 40px;
+        height: 80px;
+        line-height: 40px;
     }
-
     #logo img {
-      width: 65%;
-      height: 90%;
+        width: 65%;
+        height: 90%;
     }
-
     .phone a #logo span {
-      font-size: 0.8em;
+        font-size: 0.8em;
     }
-
     nav i.material-icons {
-      height: 40px;
-      line-height: normal;
+        height: 40px;
+        line-height: normal;
     }
-
     .nav-wrapper span {
-      position: absolute;
-      font-size: 0.7em;
-      width: 250px;
-      padding: 30px 0 0 10px;
-      line-height: normal;
-      white-space: normal;
+        position: absolute;
+        font-size: 0.7em;
+        width: 250px;
+        padding: 30px 0 0 10px;
+        line-height: normal;
+        white-space: normal;
     }
-
     #scrollspy {
-      display: flex;
-      flex-direction: column;
-      height: 100px;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
     }
-
     #scrollspy .right {
-      width: 100%;
-    }
-  }
-
-
-@media screen and (max-width: 560px) {
-
-    #bottomNavbar {
-      height: 80px;
-      line-height: 40px;
-    }
-
-    #bottomBar {
-      display: flex;
-      flex-direction: column;
-      height: 100px;
-    }
-
-    #bottomBar .right {
-      width: 100%;
+        width: 100%;
     }
 }
 
-.circle.responsive-img
-{
-  width: 60%;
+@media screen and (max-width: 560px) {
+    #bottomNavbar {
+        height: 80px;
+        line-height: 40px;
+    }
+    #bottomBar {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+    }
+    #bottomBar .right {
+        width: 100%;
+    }
+}
+
+.circle.responsive-img {
+    width: 60%;
 }
