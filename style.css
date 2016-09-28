@@ -1,5 +1,5 @@
 /*#0e4d37 vert */
-/*#d66829 orange*/
+/* #ff7400 orange */
 
 .zoom {
   font-size: 2em;
@@ -186,3 +186,27 @@ p {
       width: 100%;
     }
   }
+
+
+@media screen and (max-width: 560px) {
+
+    #bottomNavbar {
+      height: 80px;
+      line-height: 40px;
+    }
+
+    #bottomBar {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+    }
+
+    #bottomBar .right {
+      width: 100%;
+    }
+}
+
+.circle.responsive-img
+{
+  width: 60%;
+}
