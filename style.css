@@ -174,3 +174,8 @@ p {
       width: 100%;
     }
 }
+
+.circle.responsive-img
+{
+  width: 85%;
+}
