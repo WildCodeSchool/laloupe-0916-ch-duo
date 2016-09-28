@@ -15,12 +15,7 @@
 }
 
 #scrollspy {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7ba65+0,d66829+24,d66829+50,d66829+79,f7ba65+100 */
-background: rgb(247,186,101); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(247,186,101,1) 0%, rgba(214,104,41,1) 24%, rgba(214,104,41,1) 50%, rgba(214,104,41,1) 79%, rgba(247,186,101,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(247,186,101,1) 0%,rgba(214,104,41,1) 24%,rgba(214,104,41,1) 50%,rgba(214,104,41,1) 79%,rgba(247,186,101,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(247,186,101,1) 0%,rgba(214,104,41,1) 24%,rgba(214,104,41,1) 50%,rgba(214,104,41,1) 79%,rgba(247,186,101,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ba65', endColorstr='#f7ba65',GradientType=0 ); /* IE6-9 */
+  background: #d66829; /* Old browsers */
 }
 
 #btnurgent {
@@ -108,12 +103,7 @@ p {
 }
 
 #bottomNavbar {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7ba65+0,d66829+24,d66829+50,d66829+79,f7ba65+100 */
-  background: rgb(247,186,101); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(247,186,101,1) 0%, rgba(214,104,41,1) 24%, rgba(214,104,41,1) 50%, rgba(214,104,41,1) 79%, rgba(247,186,101,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(247,186,101,1) 0%,rgba(214,104,41,1) 24%,rgba(214,104,41,1) 50%,rgba(214,104,41,1) 79%,rgba(247,186,101,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(247,186,101,1) 0%,rgba(214,104,41,1) 24%,rgba(214,104,41,1) 50%,rgba(214,104,41,1) 79%,rgba(247,186,101,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ba65', endColorstr='#f7ba65',GradientType=0 ); /* IE6-9 */
+  background: #d66829; /* Old browsers */
 }
 
 /* Global view */
@@ -123,6 +113,10 @@ p {
 
 .description {
   font-size: 1.2rem;
+}
+
+.section {
+  min-height: 80vh;
 }
 
 /* Responsive */
