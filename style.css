@@ -14,8 +14,7 @@
 }
 
 #scrollspy {
-    background: #d66829;
-    /* Old browsers */
+    background: #ff7400;
 }
 
 #btnurgent {
@@ -71,6 +70,12 @@
     height: 90px;
 }
 
+#dropdown1 a , #dropdown1 li {
+  color: black;
+  font-size: 0.8em;
+
+}
+
 
 /* title and paragraph */
 
@@ -103,8 +108,37 @@ p {
 
 #stats {
     background-image: url(img/slider.jpg);
-    background-size: 100em;
+    background-size: cover;
     background-repeat: no-repeat;
+    width: 70vw;
+    height: 40vh;
+}
+
+#slider2 {
+    height: 100%;
+}
+
+#stats a {
+    top: 80px;
+}
+
+@media screen and (max-width: 500px) {
+    #stats {
+        width: 90vw;
+        height: 45vh;
+    }
+    #stats h1 {
+        font-size: 1.7em;
+    }
+    #stats p {
+        font-size: 1.0em;
+    }
+    #stats i {
+        font-size: 4rem;
+    }
+    #stats a {
+        top: 130px;
+    }
 }
 
 
