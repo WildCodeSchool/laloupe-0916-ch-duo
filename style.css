@@ -14,8 +14,7 @@
 }
 
 #scrollspy {
-    background: #d66829;
-    /* Old browsers */
+    background: #ff7400;
 }
 
 #btnurgent {
@@ -71,6 +70,11 @@
     height: 90px;
 }
 
+#dropdown1 a , #dropdown1 li {
+  color: black;
+  font-size: 0.8em;
+
+}
 
 /* title and paragraph */
 
