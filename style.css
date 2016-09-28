@@ -87,6 +87,8 @@ p {
 }
 
 .btn-large {
+  width: 200px;
+  height: 100px;
   color: black;
 }
 
@@ -119,7 +121,31 @@ p {
   min-height: 80vh;
 }
 
+.circle.responsive-img
+{
+  width: 85%;
+}
+
 /* Responsive */
+
+@media screen and (max-width: 560px) {
+
+    #bottomNavbar {
+      height: 80px;
+      line-height: 40px;
+    }
+
+    #bottomBar {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+    }
+
+    #bottomBar .right {
+      width: 100%;
+    }
+}
+
 @media screen and (max-width: 500px) {
 
     nav {
@@ -134,6 +160,11 @@ p {
 
     .phone a #logo span {
       font-size: 0.8em;
+    }
+
+    nav i.material-icons {
+      height: 40px;
+      line-height: normal;
     }
 
     .nav-wrapper span {
@@ -155,27 +186,3 @@ p {
       width: 100%;
     }
   }
-
-
-@media screen and (max-width: 560px) {
-
-    #bottomNavbar {
-      height: 80px;
-      line-height: 40px;
-    }
-
-    #bottomBar {
-      display: flex;
-      flex-direction: column;
-      height: 100px;
-    }
-
-    #bottomBar .right {
-      width: 100%;
-    }
-}
-
-.circle.responsive-img
-{
-  width: 85%;
-}
