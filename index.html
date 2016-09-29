@@ -14,6 +14,28 @@
         <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" media="screen,projection"/>
         <link rel="stylesheet" href="style.css" media="screen" title="no title">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="responsiveslides.min.js"></script>
+        <script>
+          $(function () {
+            $(".rslides").responsiveSlides();
+              auto: true,             // Boolean: Animate automatically, true or false
+              speed: 1000,            // Integer: Speed of the transition, in milliseconds
+              timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+              pager: false,           // Boolean: Show pager, true or false
+              nav: false,             // Boolean: Show navigation, true or false
+              random: false,          // Boolean: Randomize the order of the slides, true or false
+              pause: false,           // Boolean: Pause on hover, true or false
+              pauseControls: false,   // Boolean: Pause when hovering controls, true or false
+              prevText: "Previous",   // String: Text for the "previous" button
+              nextText: "Next",       // String: Text for the "next" button
+              maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+              controls: "",           // Selector: Where controls should be appended to, default is after the 'ul'
+              namespace: "rslides",   // String: change the default namespace used
+              before: function(){},   // Function: Before callback
+              after: function(){}     // Function: After callback
+          });
+        </script>
     </head>
 
     <body>
@@ -94,35 +116,29 @@
 
         <!-- Début Slider -->
         <div id="topFixed"></div>
-        <div class="carousel carousel-slider center textevue" data-indicators="true" style="min-height:500px">
-            <div id="btnurgent" class="carousel-fixed-item center">
-                <div class="row">
-                    <a class="messageAccueil" class="textevue">Bienvenue au centre hospitalier de La Loupe</a>
-                </div>
-                <a class="waves-effect waves-light btn-large textevue">J'ai un rendez-vous<i class="material-icons">insert_invitation</i></a>
-                <a class="waves-effect waves-light btn-large textevue">Je vais être hospitalisé<i class="material-icons">local_hospital</i></a>
-                <a class="waves-effect waves-light btn-large textevue">Je vais être résident<i class="material-icons">local_hotel</i></a>
-                <a class="waves-effect waves-light btn-large textevue">Je vais voir un patient<i class="material-icons">transfer_within_a_station</i></a>
-            </div>
-
-            <div class="carousel-item" href="#one!">
-                <img src="./img/creative2.jpg" alt=""/>
-                <p class="white-text">This is your first panel</p>
-            </div>
-            <div class="carousel-item" href="#two!">
-                <img src="./img/creative2.jpg" alt=""/>
-                <p class="white-text">This is your second panel</p>
-            </div>
-            <div class="carousel-item" href="#three!">
-                <img src="./img/creative2.jpg" alt=""/>
-                <p class="white-text">This is your third panel</p>
-            </div>
+        <div class="rowAccueil  row">
+            <a class="messageAccueil col s6 offset-s3" class="textevue">
+              <span class="welcome col s12">Bienvenue</span>
+              <span class="message col S12">au centre hospitalier de La Loupe</span>
+            </a>
         </div>
+        <ul class="rslides" id="myCarousel">
 
+          <li><img src="img/creative2.jpg" alt=""></li>
+          <li><img src="img/creative2.jpg" alt=""></li>
+          <li><img src="img/creative2.jpg" alt=""></li>
+
+        </ul>
+        <div id="btnurgent" class="center col s12">
+            <a class="waves-effect waves-light btn-large col s12 m6 l3 textevue"><i class="material-icons iconButton">insert_invitation</i></br>J'ai un rendez-vous</a>
+            <a class="waves-effect waves-light btn-large col s12 m6 l3 textevue"><i class="material-icons iconButton">local_hospital</i></br>Je vais être hospitalisé</a>
+            <a class="waves-effect waves-light btn-large col s12 m6 l3 textevue"><i class="material-icons iconButton">local_hotel</i></br>Je vais être résident</a>
+            <a class="waves-effect waves-light btn-large col s12 m6 l3 textevue"><i class="material-icons iconButton">transfer_within_a_station</i></br>Je vais voir un patient</a>
+        </div>
         <!-- Fin Slider -->
 
         <!-- Début Description -->
-        <div class="container textevue">
+        <div class="container textevue presentation">
             <div class="col s12 m7 textevue">
                 <h2 class="header center-align textevue">Centre Hospitalier de La Loupe</h2>
                 <div class="card horizontal">
