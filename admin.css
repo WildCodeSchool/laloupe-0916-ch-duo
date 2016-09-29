@@ -10,7 +10,7 @@ html {
 body {
     display: table-cell;
     vertical-align: middle;
-    background: #4ecd5f;
+    background: #33CE74;
 }
 
 #login-page {
@@ -29,7 +29,7 @@ body {
 }
 
 .btn {
-  background-color: #F44336;
+  background-color: #ff7400;
 }
 
 h1 {
