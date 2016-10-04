@@ -118,7 +118,6 @@ p {
     background-image: url(../img/slider.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
     height: 60vh;
 }
 
@@ -255,7 +254,6 @@ p {
        padding-top: 12px;
      }
     #stats {
-        width: 90vw;
         height: 35vh;
     }
     #stats h1 {
@@ -272,7 +270,7 @@ p {
     }
   }
 
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 400px){
     .message h3 {
       font-size: 1.5em;
     }
@@ -290,5 +288,8 @@ p {
      .group-btn .btn i {
        font-size: 1.3em;
        padding-top: 10px;
+     }
+       #stats {
+           height: 65vh;
      }
   }
