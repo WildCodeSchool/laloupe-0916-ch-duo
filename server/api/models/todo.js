@@ -1,7 +1,8 @@
 import mongoose from 'mongoose';
 
 const todoSchema = new mongoose.Schema({
-    description: String
+    description: String,
+    banane: Number
 });
 
 let model = mongoose.model('Todo', todoSchema);
@@ -18,6 +19,10 @@ export default class Todo {
         });
     }
 
+    gimmeAnError(req, res) {
+        res.sendStatus(418);
+    }
+
     findById(req, res) {
         model.findById(req.params.id, (err, todo) => {
             if (err || !todo) {
@@ -30,7 +35,8 @@ export default class Todo {
 
     create(req, res) {
         model.create({
-                description: req.body.description
+                description: req.body.description,
+                banane: req.body.banane
             },
             (err, todo) => {
                 if (err) {
@@ -45,7 +51,8 @@ export default class Todo {
         model.update({
             _id: req.params.id
         }, {
-            description: req.body.description
+            description: req.body.description,
+            banane: req.body.banane
         }, (err, todo) => {
             if (err || !todo) {
                 res.status(500).send(err.message);

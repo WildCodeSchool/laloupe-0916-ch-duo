@@ -9,6 +9,7 @@ module.exports = (app) => {
     var todo = new Todo();
 
     router.get('/', todo.findAll);
+    router.get('/gimmeAnError', todo.gimmeAnError);
 
     router.get('/:id', todo.findById);
 
@@ -18,6 +19,6 @@ module.exports = (app) => {
 
     router.delete('/:id', todo.delete);
 
-    app.use('/todos', Auth.hasAuthorization, router);
+    app.use('/todos', router);
 
 }
